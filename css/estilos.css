@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap') ;
+
+body{
+	background-color: #EFEBE7;
+	font-family: 'Belleza', sans-serif;
+}
+
+#header{
+	background-color: #DFDFE2;
+	opacity: .8;
+	z-index: 100;
+}
+
+#texto-portada {
+	background-color: #CFC8E5 ;
+	height: 30vh;
+	}
+
+#texto-portada2{
+	background-color: #D0E0CC;
+	height: 30vh;
+}
+
+@media all and (max-width: 576px){
+	#texto-portada {
+	height: 45vh;
+	}
+
+#texto-portada2{
+	height: 45vh;
+	}
+}
+
+#banner1{
+	background-image: url('../assets/pasta1.jpg');
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 400px;
+	height: 50vh;
+}
+
+#banner2{
+	background-image: url('../assets/altar.jpg');
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 400px;
+	height: 50vh;
+}
+
+#banner3{
+	background-image: url('../assets/plantas1.jpg');
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 400px;
+	height: 60vh;
+}
+
+#banner4{
+	background-image: url('../assets/balsamo.jpg');
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 400px;
+	height: 60vh;
+}
+
+.texto1{
+	z-index: 2;
+	color: whitesmoke;
+}
+
+.nav-link{
+	color: black;
+	padding: .1rem 1rem;
+}
+
+.nav-link:focus, .nav-link:hover{
+	color: black;
+}
+
+a:hover{
+	color: black;
+}
+
+/*Origen*/
+
+#portada3{
+	max-width: 30rem;
+	max-height: 40rem;
+}
+
+#picOrigen{
+	max-width: 20rem;
+	max-height: 30rem;
+}
+
+/*Productos*/
+
+#modalOnline{
+	background-color: #FAFADB;
+}
+
+#botonCompra{
+	background-color: #D0E0CC ;
+}
+
+.btn-check:focus + .btn, .btn:focus{
+	box-shadow: 0 0 0 .25rem #CAC9CF ;
+}
+#bodyContacto{
+	position: relative;
+	background-image: url("../assets/cover.jpg");
+	min-height: 550px;
+	height: 60vh;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: whitesmoke;
+}
+
+@media all and (max-width: 576px){
+	#bodyContacto {
+	background-image: url("../assets/balsamo.jpg");
+	}
+}
+
+#footer{
+	background-color: #F0DCCA;
+	min-height: 40vh;
+	width: 100%;
+}
+.iconoFooter{
+	width: 1.8rem;
+	height: 1.8rem;
+}
+
+
