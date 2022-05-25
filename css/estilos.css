@@ -5,30 +5,54 @@ body{
 	font-family: 'Belleza', sans-serif;
 }
 
+.navbar-light .navbar-nav .nav-link{
+	color: black;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
+	color: black;
+}
+
 #header{
 	background-color: #DFDFE2;
 	opacity: .8;
 	z-index: 100;
+	height: 100px;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,2);
+	transition:  all 250ms;
+}
+
+#header:hover{
+	height: 110px;
+	background-color: #D5E2BC;
+}
+
+@media all and (max-width: 576px){
+	#carouselExampleFade{
+		max-width: 320px;
+		height: auto;
+	}
+	#fotoCarrousel {
+		max-width: 320px;
+		height: auto;
+	}
+}
+
+@media all and (max-width: 992px){
+	#carouselExampleFade{
+		max-width: 415px;
+		height: auto;
+	}
+	
 }
 
 #texto-portada {
 	background-color: #CFC8E5 ;
-	height: 30vh;
-	}
+	
+}
 
 #texto-portada2{
 	background-color: #D0E0CC;
-	height: 30vh;
-}
-
-@media all and (max-width: 576px){
-	#texto-portada {
-	height: 45vh;
-	}
-
-#texto-portada2{
-	height: 45vh;
-	}
 }
 
 #banner1{
@@ -38,7 +62,8 @@ body{
 	background-size: cover;
 	background-position: center;
 	min-height: 400px;
-	height: 50vh;
+	height: 40vh;
+	
 }
 
 #banner2{
@@ -48,7 +73,7 @@ body{
 	background-size: cover;
 	background-position: center;
 	min-height: 400px;
-	height: 50vh;
+	height: 40vh;
 }
 
 #banner3{
@@ -58,7 +83,7 @@ body{
 	background-size: cover;
 	background-position: center;
 	min-height: 400px;
-	height: 60vh;
+	height: 40vh;
 }
 
 #banner4{
@@ -68,12 +93,21 @@ body{
 	background-size: cover;
 	background-position: center;
 	min-height: 400px;
-	height: 60vh;
+	height: 40vh;
 }
 
 .texto1{
 	z-index: 2;
 	color: whitesmoke;
+	transition: all 250ms;
+}
+
+.texto1:hover{
+	transform: scale(1.1,1.1);
+}
+
+.texto1:focus{
+	transform: scale(1.1,1.1);
 }
 
 .nav-link{
@@ -114,6 +148,11 @@ a:hover{
 .btn-check:focus + .btn, .btn:focus{
 	box-shadow: 0 0 0 .25rem #CAC9CF ;
 }
+
+#carouselExampleControls{
+	max-width: 511px;
+	max-height: 557px;
+}
 #bodyContacto{
 	position: relative;
 	background-image: url("../assets/cover.jpg");
@@ -130,6 +169,74 @@ a:hover{
 	#bodyContacto {
 	background-image: url("../assets/balsamo.jpg");
 	}
+}
+
+.tituloSeccion{
+	background-color: #CFC8E5 ;
+}
+
+.cardPlantas {
+    max-width: 300px;
+    max-height: 500px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cardPlantas img {
+    transition: all linear 0.25s;
+}
+
+.cardPlantas .titulo {
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    color: black;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: all linear 0.25s;
+}
+
+
+.cardPlantas .descripcion {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: black;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+.cardPlantas:hover img {
+    filter: grayscale(100%);
+}
+
+.cardPlantas:focus img {
+    filter: grayscale(100%);
+}
+
+.cardPlantas:hover .titulo {
+    top: 250px;
+}
+
+.cardPlantas:focus .titulo {
+    top: 250px;
+}
+
+.cardPlantas:hover .descripcion {
+    top: 80px;
+}
+
+.cardPlantas:focus .descripcion {
+    top: 80px;
+}
+
+.tituloEspecial{
+    line-height: 0.8em;
 }
 
 #footer{
