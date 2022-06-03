@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap') ;
+
+$breakpoints:(
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+
+%miNoClase{
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 400px;
+	height: 40vh;
+}
+
+@mixin position($left, $top){
+	position:absolute;
+	color: black;
+	left: $left;
+	top: $top;
+	transition: all 250ms;
+}
+
+$soft-purple: #CFC8E5;
+$soft-pink: #F0DCCA;
+$soft-green: #D0E0CC;
+
+@keyframes desplaza{
+  0%{
+    top: 0;
+  }
+  25%{
+    top: -20px;
+  }
+  50%{
+    top: 0px;
+  }
+  75%{
+    top: 20px;
+  }
+  100%{
+    top: 0;
+  }
+}

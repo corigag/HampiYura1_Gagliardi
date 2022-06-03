@@ -1,0 +1,223 @@
+
+body{
+	background-color: #EFEBE7;
+	font-family: 'Belleza', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: black;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
+	color: black;
+}
+
+#header{
+	background-color: #DFDFE2;
+	opacity: .8;
+	z-index: 100;
+	height: 100px;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,2);
+	transition:  all 250ms;
+	&:hover{
+		height: 110px;
+		background-color: #D5E2BC;
+	}
+}
+
+#footer{
+	background-color: $soft-pink ;
+	min-height: 40vh;
+	width: 100%;
+	.iconoFooter{
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+}
+
+#carouselExampleFade{
+	@media all and (max-width: map-get($breakpoints, md)){
+		max-width: 320px;
+		height: auto;
+	}
+	@media all and (max-width: map-get($breakpoints, lg)){
+		max-width: 415px;
+		height: auto;
+	}
+}
+
+#fotoCarrousel{
+	@media all and (max-width: map-get($breakpoints, md)){
+		max-width: 320px;
+		height: auto;
+	}
+}
+
+.texto__intro{
+	font-size: 1.1rem;
+}
+
+.selloHampi{
+	position: relative;
+	max-width: 30rem;
+	max-height: 30rem ;
+	img{
+  		position: relative;
+  		width: 100%;
+  		animation-name: desplaza;
+  		animation-iteration-count: infinite;
+  		animation-timing-function: linear;
+  		animation-duration: 8s;
+		}
+}
+
+.info__banner{
+	background-color: $soft-purple;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	min-height: 50vh;
+}
+
+#card__img{
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+#texto-portada2{
+	background-color: $soft-green;
+}
+
+#banner1{
+	background-image: url('../assets/pasta1.jpg');
+	@extend %miNoClase;
+}
+
+#banner2{
+	background-image: url('../assets/altar.jpg');
+	@extend %miNoClase;
+}
+
+#banner3{
+	background-image: url('../assets/plantas1.jpg');
+	@extend %miNoClase;
+}
+
+#banner4{
+	background-image: url('../assets/balsamo.jpg');
+	@extend %miNoClase;
+}
+
+.texto1{
+	z-index: 2;
+	color: whitesmoke;
+	transition: all 250ms;
+	&:hover{
+		transform: scale(1.1,1.1);
+	}	
+}
+
+.nav-link{
+	color: black;
+	padding: .1rem 1rem;
+	&:hover{
+		color: black;
+	}
+}
+
+a{
+	&:hover{
+		color: black;
+	}
+}
+
+/*Productos*/
+
+#modalOnline{
+	background-color: #FAFADB;
+}
+
+#botonCompra{
+	background-color: #D0E0CC ;
+}
+
+.btn-check:focus + .btn, .btn:focus{
+	box-shadow: 0 0 0 .25rem #CAC9CF ;
+}
+
+#carouselExampleControls{
+	max-width: 511px;
+	max-height: 557px;
+}
+
+/*Plantas*/
+
+.tituloSeccion{
+	background-color: $soft-purple ;
+} 
+
+.cardPlantas{
+	max-width: 300px;
+    max-height: 500px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 10px;
+    img {
+    transition: all linear 0.25s;
+    }
+	.titulo{
+		@include position(30px, 200px)
+	}
+	.descripcion{
+		@include position(30px, 20px)
+	}
+	&:hover{
+		img{
+			filter: grayscale(100%);
+		}
+		.titulo {
+    		top: 250px;
+		}
+		.descripcion {
+   			 top: 80px;
+		}
+	}
+}
+
+#bodyContacto{
+	position: relative;
+	background-image: url("../assets/cover.jpg");
+	min-height: 550px;
+	height: 60vh;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: whitesmoke;
+	@media all and (max-width: map-get($breakpoints, sm)){
+		background-image: url("../assets/balsamo.jpg");
+	}
+}
+
+/*Origen*/
+
+#portada3{
+	max-width: 30rem;
+	max-height: 40rem;
+}
+
+#picOrigen{
+	max-width: 20rem;
+	max-height: 30rem;
+}
+
+
+
+
