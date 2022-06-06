@@ -1,7 +1,7 @@
 {
   "name": "desafio5",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hampi Yura. Elaboración de cosmética y medicina natural, basado en las propiedades naturales de los ingredientes.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

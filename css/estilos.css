@@ -39,9 +39,13 @@ body {
   color: black;
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23a4af69' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='64px' height='64px'%3E%3Cpath d='M61 21H3c-0.552 0-1-0.448-1-1V10c0-0.552 0.448-1 1-1h58c0.552 0 1 0.448 1 1v10C62 20.552 61.552 21 61 21z M4 19h56v-8H4V19z'/%3E%3Cpath d='M61 38H3c-0.552 0-1-0.448-1-1V27c0-0.552 0.448-1 1-1h58c0.552 0 1 0.448 1 1v10C62 37.552 61.552 38 61 38z M4 36h56v-8H4V36z'/%3E%3Cpath d='M7 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C8 50.552 7.552 51 7 51z M12 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C13 50.552 12.552 51 12 51z M17 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C18 50.552 17.552 51 17 51z M22 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C23 50.552 22.552 51 22 51z M27 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C28 50.552 27.552 51 27 51z M32 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C33 50.552 32.552 51 32 51z M37 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C38 50.552 37.552 51 37 51z M42 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C43 50.552 42.552 51 42 51z M47 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C48 50.552 47.552 51 47 51z M52 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C53 50.552 52.552 51 52 51z M57 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C58 50.552 57.552 51 57 51z'/%3E%3Cpath d='M61 55H3c-0.552 0-1-0.448-1-1V44c0-0.552 0.448-1 1-1h58c0.552 0 1 0.448 1 1v10C62 54.552 61.552 55 61 55z M4 53h56v-8 H4V53z'/%3E%3C/svg%3E");
+}
+
 #header {
   background-color: #DFDFE2;
-  opacity: .8;
+  opacity: .9;
   z-index: 100;
   height: 100px;
   box-shadow: 0 0 5px 1px black;
@@ -230,8 +234,23 @@ a:hover {
   top: 80px;
 }
 
+article .pic_nota {
+  max-width: 15rem;
+  max-height: 20rem;
+  border-radius: 10px;
+}
+
+article .btn_leermas {
+  border-color: #CFC8E5;
+  color: #735960;
+}
+
+article .btn_leermas:hover {
+  color: white;
+  background-color: #CFC8E5;
+}
+
 #bodyContacto {
-  position: relative;
   background-image: url("../assets/cover.jpg");
   min-height: 550px;
   height: 60vh;
@@ -242,19 +261,45 @@ a:hover {
   color: whitesmoke;
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 992px) {
   #bodyContacto {
     background-image: url("../assets/balsamo.jpg");
   }
 }
 
-/*Origen*/
-#portada3 {
-  max-width: 30rem;
-  max-height: 40rem;
+.form-check-input:checked {
+  background-color: #B5CFA0;
+  border-color: #B5CFA0;
 }
 
-#picOrigen {
-  max-width: 20rem;
-  max-height: 30rem;
+.btn-outline-light:hover {
+  border-color: #D1B99E;
+  background-image: linear-gradient(to right, #d1b99e, #d3cab2, #d9d9c8, #e3e7de, #f3f4f3);
+}
+
+.card_nota {
+  border-radius: 10px;
+}
+
+@media all and (min-width: 768px) {
+  .card_nota {
+    max-width: 20rem;
+    max-height: 30rem;
+  }
+}
+
+article .pic_nota {
+  max-width: 25rem;
+  max-height: 40rem;
+  border-radius: 10px;
+}
+
+article .btn_leermas {
+  border-color: #CFC8E5;
+  color: #735960;
+}
+
+article .btn_leermas:hover {
+  color: white;
+  background-color: #CFC8E5;
 }
