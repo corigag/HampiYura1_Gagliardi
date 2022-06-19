@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
-#banner1, #banner2, #banner3, #banner4 {
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+#banner_1, #banner_2, #banner_3, #banner_4 {
   opacity: 0.8;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,9 +27,14 @@
   }
 }
 
+/*Estilos general*/
 body {
   background-color: #EFEBE7;
   font-family: 'Belleza', sans-serif;
+}
+
+.specialfont {
+  font-family: 'DM Sans', sans-serif;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -47,7 +53,7 @@ body {
   background-color: #DFDFE2;
   z-index: 100;
   height: 100px;
-  box-shadow: 0 0 5px 1px black;
+  box-shadow: 0 0 10px 1px black;
   transition: all 250ms;
 }
 
@@ -56,17 +62,23 @@ body {
   background-color: #D5E2BC;
 }
 
+.offcanvas {
+  background-color: #DFDFE2;
+  opacity: 0.9;
+}
+
 #footer {
   background-color: #F0DCCA;
   min-height: 40vh;
   width: 100%;
 }
 
-#footer .iconoFooter {
+#footer .footer_icono {
   width: 1.8rem;
   height: 1.8rem;
 }
 
+/*Comienza estilos Index*/
 @media all and (max-width: 768px) {
   #carouselExampleFade {
     max-width: 320px;
@@ -82,7 +94,7 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  #fotoCarrousel {
+  #carrousel_foto {
     max-width: 320px;
     height: auto;
   }
@@ -92,13 +104,13 @@ body {
   font-size: 1.1rem;
 }
 
-.selloHampi {
+.sello-Hampi {
   position: relative;
   max-width: 30rem;
   max-height: 30rem;
 }
 
-.selloHampi img {
+.sello-Hampi img {
   position: relative;
   width: 100%;
   animation-name: desplaza;
@@ -107,8 +119,11 @@ body {
   animation-duration: 8s;
 }
 
-.info__banner {
+.container_banner {
   background-color: #CFC8E5;
+}
+
+.container_banner .banner_info {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -122,33 +137,33 @@ body {
   height: 3.5rem;
 }
 
-#texto-portada2 {
+#texto_portada2 {
   background-color: #D0E0CC;
 }
 
-#banner1 {
-  background-image: url("../assets/pasta1.jpg");
+#banner_1 {
+  background-image: url("../fotos/pasta1.jpg");
 }
 
-#banner2 {
-  background-image: url("../assets/altar.jpg");
+#banner_2 {
+  background-image: url("../fotos/altar.jpg");
 }
 
-#banner3 {
-  background-image: url("../assets/plantas1.jpg");
+#banner_3 {
+  background-image: url("../fotos/plantas1.jpg");
 }
 
-#banner4 {
-  background-image: url("../assets/balsamo.jpg");
+#banner_4 {
+  background-image: url("../fotos/balsamo.jpg");
 }
 
-.texto1 {
+.texto_1 {
   z-index: 2;
   color: whitesmoke;
   transition: all 250ms;
 }
 
-.texto1:hover {
+.texto_1:hover {
   transform: scale(1.1, 1.1);
 }
 
@@ -165,12 +180,12 @@ a:hover {
   color: black;
 }
 
-/*Productos*/
-#modalOnline {
+/*Comienzo estilos Productos*/
+#modal_online {
   background-color: #FAFADB;
 }
 
-#botonCompra {
+#boton_compra {
   background-color: #D0E0CC;
 }
 
@@ -183,12 +198,12 @@ a:hover {
   max-height: 557px;
 }
 
-/*Plantas*/
-.tituloSeccion {
+/*Comienzo estilos Plantas*/
+.seccion_titulo {
   background-color: #CFC8E5;
 }
 
-.cardPlantas {
+.card_plantas {
   max-width: 300px;
   max-height: 500px;
   background-color: #FFF;
@@ -201,11 +216,11 @@ a:hover {
   border-radius: 10px;
 }
 
-.cardPlantas img {
+.card_plantas img {
   transition: all linear 0.25s;
 }
 
-.cardPlantas .titulo {
+.card_plantas .titulo {
   position: absolute;
   color: black;
   left: 30px;
@@ -213,7 +228,7 @@ a:hover {
   transition: all 250ms;
 }
 
-.cardPlantas .descripcion {
+.card_plantas .descripcion {
   position: absolute;
   color: black;
   left: 30px;
@@ -221,18 +236,19 @@ a:hover {
   transition: all 250ms;
 }
 
-.cardPlantas:hover img {
+.card_plantas:hover img {
   filter: grayscale(100%);
 }
 
-.cardPlantas:hover .titulo {
+.card_plantas:hover .titulo {
   top: 250px;
 }
 
-.cardPlantas:hover .descripcion {
+.card_plantas:hover .descripcion {
   top: 80px;
 }
 
+/*Comienzo estilos Notas*/
 article .pic_nota {
   max-width: 15rem;
   max-height: 20rem;
@@ -247,33 +263,6 @@ article .btn_leermas {
 article .btn_leermas:hover {
   color: white;
   background-color: #CFC8E5;
-}
-
-#bodyContacto {
-  background-image: url("../assets/cover.jpg");
-  min-height: 550px;
-  height: 60vh;
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: whitesmoke;
-}
-
-@media all and (max-width: 992px) {
-  #bodyContacto {
-    background-image: url("../assets/balsamo.jpg");
-  }
-}
-
-.form-check-input:checked {
-  background-color: #B5CFA0;
-  border-color: #B5CFA0;
-}
-
-.btn-outline-light:hover {
-  border-color: #D1B99E;
-  background-image: linear-gradient(to right, #d1b99e, #d3cab2, #d9d9c8, #e3e7de, #f3f4f3);
 }
 
 .card_nota {
@@ -301,4 +290,72 @@ article .btn_leermas {
 article .btn_leermas:hover {
   color: white;
   background-color: #CFC8E5;
+}
+
+.breadcrumb a {
+  color: #735960;
+}
+
+.pagination li {
+  margin-left: .25rem;
+  margin-right: .25rem;
+}
+
+.pagination li a {
+  border-radius: .25rem;
+  border: none;
+  text-align: center;
+  color: #735960;
+  background-color: #EFEBE7;
+}
+
+.pagination li a .active {
+  background-color: #CFC8E5;
+}
+
+.page-item .active {
+  background-color: #F0DCCA;
+}
+
+.page-item:active {
+  background-color: #CFC8E5;
+}
+
+.page-link:hover {
+  color: #735960;
+  background-color: #CFC8E5;
+}
+
+.page-link:focus {
+  color: #735960;
+  background-color: #F0DCCA;
+  box-shadow: 0 0 0 0.25rem #F0DCCA;
+}
+
+/*Comienzo estilos Contacto*/
+#body_contacto {
+  background-image: url("../fotos/cover.jpg");
+  min-height: 550px;
+  height: 60vh;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+}
+
+@media all and (max-width: 992px) {
+  #body_contacto {
+    background-image: url("../fotos/balsamo.jpg");
+  }
+}
+
+.form-check-input:checked {
+  background-color: #B5CFA0;
+  border-color: #B5CFA0;
+}
+
+.btn-outline-light:hover {
+  border-color: #D1B99E;
+  background-image: linear-gradient(to right, #d1b99e, #d3cab2, #d9d9c8, #e3e7de, #f3f4f3);
 }
