@@ -33,7 +33,7 @@ body {
   font-family: 'Belleza', sans-serif;
 }
 
-.specialfont {
+.special-font {
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -76,6 +76,19 @@ body {
 #footer .footer_icono {
   width: 1.8rem;
   height: 1.8rem;
+}
+
+.modal-header {
+  border-bottom: 0;
+}
+
+.modal-footer {
+  border-top: 0;
+  padding: .25rem;
+}
+
+.modal-body {
+  padding: .25rem;
 }
 
 /*Comienza estilos Index*/
@@ -198,6 +211,11 @@ a:hover {
   max-height: 557px;
 }
 
+.modal_icono {
+  max-width: 8rem;
+  height: auto;
+}
+
 /*Comienzo estilos Plantas*/
 .seccion_titulo {
   background-color: #CFC8E5;
@@ -249,22 +267,6 @@ a:hover {
 }
 
 /*Comienzo estilos Notas*/
-article .pic_nota {
-  max-width: 15rem;
-  max-height: 20rem;
-  border-radius: 10px;
-}
-
-article .btn_leermas {
-  border-color: #CFC8E5;
-  color: #735960;
-}
-
-article .btn_leermas:hover {
-  color: white;
-  background-color: #CFC8E5;
-}
-
 .card_nota {
   border-radius: 10px;
 }
@@ -272,7 +274,7 @@ article .btn_leermas:hover {
 @media all and (min-width: 768px) {
   .card_nota {
     max-width: 20rem;
-    max-height: 30rem;
+    max-height: 25rem;
   }
 }
 
